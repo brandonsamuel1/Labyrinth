@@ -13,7 +13,6 @@ public class MoveToGoal : MonoBehaviour
     // Start is called before the first frame update
     private void Start()
     {
-        Debug.Log("Starting...");
         animator = GetComponentInChildren<Animator>();
         agent = GetComponent<NavMeshAgent>();
         agent.destination = goal.position;
